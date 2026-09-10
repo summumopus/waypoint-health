@@ -43,12 +43,20 @@ function SiteHeader() {
           <span className="font-serif text-xl text-ink">Waypoint</span>
           <span className="font-serif text-xl italic text-sage-dark">Health</span>
         </Link>
-        <Link
-          href="/search"
-          className="text-sm text-ink/70 hover:text-ink transition-colors"
-        >
-          Browse all listings
-        </Link>
+        <nav className="flex items-center gap-6">
+          <Link
+            href="/search"
+            className="text-sm text-ink/70 hover:text-ink transition-colors"
+          >
+            Browse all listings
+          </Link>
+          <Link
+            href="/list-your-clinic"
+            className="text-sm text-ink/70 hover:text-ink transition-colors"
+          >
+            List your clinic
+          </Link>
+        </nav>
       </div>
     </header>
   );
